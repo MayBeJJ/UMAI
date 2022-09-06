@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+
+<meta property="og:title" content="UMAI 홈페이지">
+<meta property="og:site_name" content="UMAI">
+<meta property="og:url" content="www.umai.com">
+<meta property="og:description" content="식품 회사">
+<meta property="og:type" content="article">
+<meta property="og:image" content="images/mainpic.png">
+
+<title>우마이 식품 제품 상세란</title>
+
+	
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+
+<link rel="stylesheet"	href="css/reset.min.css"/>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="css/product_detail.css" />
+
+<script src="script/jquery-3.6.0.min.js"></script>
+
+<script src="script/sweetalert2.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<div class="topMenu">
+			<div class="top_wrap">
+				<div class="logo">
+					<a href="project_index.html"><img src="images/logo.png" alt="UMAI 로고" /></a>
+				</div>
+				<div id="gnb">
+					<ul class="gnbul">
+						<li><a href="#">UMAI 소개</a>
+							<ul class="info lnb">
+								<li class="effect"><a href="company.html">회사소개</a></li>
+								<li><a href="#">오시는길</a></li>
+								<li><a href="#">고객센터</a></li>
+							</ul></li>
+
+						<li><a href="#">제품</a>
+							<ul class="product lnb">
+								<li><a href="#">신제품</a></li>
+								<li class="effect"><a href="product.html">전체 제품</a></li>
+								<li><a href="#">제품 구매</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="#">레시피</a>
+							<ul class="recipe lnb">
+								<li><a href="#">간편 레시피</a></li>
+								<li><a href="#">UMAI 레시피</a></li>
+								<li><a href="#">제품 레시피</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">뉴스</a>
+							<ul class="news lnb">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">게시판</a></li>
+								<li><a href="#">고객의 소리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="burger">
+
+					<a class="menu-trigger" href="#a"> 
+						<span></span> <span></span> <span></span>
+					</a>
+
+
+
+					<ul class="sideMenu">
+						<li class="effect"><a href="sign-up.html"><span
+								class="material-icons">person</span>
+							<p>회원가입</p></a></li>
+						<li class="effect"><a href="login.html"><span
+								class="material-icons">login</span>
+							<p>로그인</p></a></li>
+						<li><a href="#"><span class="material-icons">shopping_cart</span>
+							<p>제품구매</p></a></li>
+						<li><a href="#"><span class="material-icons">support_agent</span>
+							<p>고객센터</p></a></li>
+						<li><a href="#"><span class="material-icons">info</span>
+							<p>기타</p></a></li>
+					</ul>
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="top">
+			<img class="back" src="images/toma.png" alt="토마토 배경" />
+
+			<h1>UMAI</h1>
+			<h2>항상 믿고 먹을 수 있는 먹거리</h2>
+		</div>
+	</header>
+
+	<!---------------------- product_detail --------------------------->
+
+	<section class="det_top">
+		<h1>상품정보</h1>
+
+		<div class="main_img">
+			<div id="carouselExampleIndicators" class="carousel slide"
+				data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="0" class="active" aria-current="true"
+						aria-label="Slide 1">
+						<img class="img1" src="images/det_main.png" alt="" />
+					</button>
+					<button type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="1" aria-label="Slide 2">
+						<img class="img2" src="images/det_d.jpg" class="d-block w-100"
+							alt="...">
+					</button>
+					<button type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="2" aria-label="Slide 3">
+						<img class="img3" src="images/det_comp.png" class="d-block w-100"
+							alt="...">
+					</button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/det_main.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="images/det_d.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="images/det_comp.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button"
+					data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button"
+					data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+		</div>
+
+		<div class="title">
+			<h2>UMAI</h2>
+			<h3>랭떡 밀볶이 매운맛(480g)</h3>
+			<p>인스타에서 소문난</p>
+			<p>화제의 그 떡볶이</p>
+			<p class=p_right>18,000 원</p>
+		</div>
+		<div class="price">
+			<button class="minus">
+				<span class="material-icons">remove</span>
+			</button>
+			<p id="qty">0</p>
+			<button class="plus">
+				<span class="material-icons">add</span>
+			</button>
+			<div class="price_det">
+				<p id="priceCount">0</p>
+				<p class="won">원</p>
+			</div>
+		</div>
+		<button class="cart">장바구니</button>
+		
+		<button class="buy">바로구매</button>
+
+	</section>
+
+
+
+	<nav>
+		<ul class="det_nav">
+			<li class="effect"><a href="#move1">상품정보</a></li>
+			<li><a href="#">구매정보</a></li>
+			<li class="effect"><a href="#move3">상품후기</a></li>
+			<li><a href="#move4">배송/환불</a></li>
+		</ul>
+	</nav>
+
+<!-- -----------  section-------------------- -->
+
+
+	<section class="det_bottom" id="move1">
+		<img class="det_img1"  src="images/det_main.png" alt="떡볶이 사진" />
+
+		<p>누구나 좋아하는 매운맛</p>
+		<p>시간이 지나도 갓 나온 떡 그대로!!</p>
+		<p>요즘 화제의 그 떡볶이</p>
+		<p>1000만 명이 선택한 그 맛!!!</p>
+		<p>후기가 인증하는 맛!!!</p>
+		<img class="det_img2" id="move3" src="images/det_rev1.PNG" alt="후기1" />
+		<img class="det_img3" src="images/det_rev2.PNG" alt="후기2" />
+		
+		<img class="det_img4" src="images/det_d.jpg" alt="떡볶이 구성품" />
+		<img class="det_img5" src="images/det_comp.png" alt="구성성분표" />
+
+		<p>UMAI 는 믿고 먹을 수 있는 식품을 지향합니다</p>
+
+	</section>
+
+
+	<!-- -----------------  aside ------------------- -->
+
+	<aside>
+		<a href="#top"><span class="material-icons move">
+				arrow_upward </span></a>
+	</aside>
+
+
+
+
+	<footer>
+		<address>
+			<p>(주)우마이 대표자 : 강민재, 홍기훈 주소 : 광주 서구 농성동 271-4 고객센터 :
+				062-1234-5678 개인정보관리책임자 : 홍길동</p>
+			<p>copyright&copy; umai all rights reserved.</p>
+		</address>
+
+	</footer>
+	
+	
+	<script
+		src="script/bootstrap.bundle.min.js"></script>
+
+
+	<script>
+		$(function() {
+				let num = 0;
+		 	$(".plus").click(function(e) {
+		 		e.preventDefault();
+		 		num ++;
+				document.getElementById("qty").innerText = num;
+				document.getElementById("priceCount").innerText = (num*18000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+			})
+			$(".minus").click(function() {
+				if(num>0){
+					num --;
+					document.getElementById("qty").innerText = num;
+					document.getElementById("priceCount").innerText = (num*18000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+				}else{
+					num==0;
+				}
+		 	
+			})
+			
+		})
+		
+
+		$(".cart").click(
+							function() {
+								Swal
+										.fire('해당 상품이 장바구니에 담겼습니다. <br><br> 장바구니로 이동하시겠습니까?<br><br>')
+			})
+							
+		$(".buy").click(function() {
+				Swal.fire('로그인 하시면 더 많은 정보와 <br><br>혜택을 확인해보실 수 있습니다.<br><br>')
+		})
+
+
+		
+	$(".menu-trigger").click(				
+			function() { // mouseleave
+				if($(".sideMenu").css("display") != "none"){
+					$(".sideMenu").slideUp()
+			//		$(".topMenu").css("background", "rgba(6, 28, 0, 0)")						
+				}else{
+					$(".sideMenu").slideDown() 
+					$(
+					".topMenu").css("background",
+					"rgba(18, 18, 18, 0.8)")
+				}
+			})
+
+
+	$(function() {
+		$(".gnbul > li").hover(
+				function() { // mouseenter
+					$(this).children(".lnb").stop().slideDown(300), $(
+							".topMenu").css("background",
+							"rgba(18, 18, 18, 0.8)")
+				}, function() { // mouseleave
+					$(this).children(".lnb").stop().slideUp(300)
+					$(".topMenu").css({
+						backgroundColor : "rgba(6, 28, 0, 0)",
+					})
+				})
+
+	/* 	$(".burger").click(
+				function() { // mouseenter
+					$(this).children(".sideMenu").stop().slideDown(), $(
+							".topMenu").css("background",
+							"rgba(18, 18, 18, 0.8)")
+
+				}) */
+				
+
+		$("#move").click(function() {
+			$("html, body").animate({
+				scrollTop : 0
+			}, 300);
+		})
+
+		$(window).scroll(function() {
+			if ($(document).scrollTop() < 100) {
+				$(".topMenu").css("background", "rgba(6, 28, 0, 0)")
+
+			} else {
+				$(".topMenu").css("background", "rgba(18, 18, 18, 0.8)")
+			}
+
+		})
+
+	 	$(".det_nav li").click(function(e) {
+	 		e.preventDefault();
+	 		$(this).siblings().removeClass("active")
+			$(this).addClass("active")
+		})
+		
+		
+	const menuTrigger = document.querySelector('.menu-trigger');
+
+menuTrigger.addEventListener('click', (event) => {
+  event.currentTarget.classList.toggle('active');
+});
+	
+	})
+		
+		
+	</script>
+	
+
+</body>
+
+</html>
